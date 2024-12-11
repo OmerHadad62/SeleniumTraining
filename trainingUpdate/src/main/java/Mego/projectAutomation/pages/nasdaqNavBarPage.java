@@ -38,9 +38,8 @@ public class nasdaqNavBarPage {
         List<WebElement> listNavbarElements = Arrays.asList(MarketActivity, NewsInsights, Solutions, About);
         List<String> navbarString = new ArrayList<>(Arrays.asList("Market Activity", "News + Insights", "Solutions", "About"));
 
-        String stringElement = null;
         for (WebElement element : listNavbarElements) {
-            stringElement = element.getText();
+            String stringElement = element.getText();
             Boolean isPass = navbarString.contains(stringElement);
 
             Assert.assertTrue(stringElement + " is not include inside", isPass);
