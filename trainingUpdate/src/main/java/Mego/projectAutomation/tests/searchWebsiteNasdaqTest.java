@@ -18,5 +18,7 @@ public class searchWebsiteNasdaqTest {
         resultSearchNasdaqPage resultSearchNasdaqPage = new resultSearchNasdaqPage(driver);
         resultSearchNasdaqPage.checkNameStock("GOOG");
 
+        seleniumBase.seleniumClose(driver);
+
     }
 }

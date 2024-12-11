@@ -20,7 +20,7 @@ public class seleniumBase {
         return driver;
     }
 
-    public static void seleniumClose(ChromeDriver driver) throws InterruptedException {
+    public static void seleniumClose(ChromeDriver driver){
         System.out.println("closing test...");
 
         driver.close();

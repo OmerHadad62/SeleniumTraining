@@ -12,5 +12,8 @@ public class navBarNasdaqTest {
 // Checking element Navbar.
         nasdaqNavBarPage nasdaqNavBarPage = new nasdaqNavBarPage(driver);
         nasdaqNavBarPage.getTextFromNavBar();
+
+        seleniumBase.seleniumClose(driver);
+
     }
 }

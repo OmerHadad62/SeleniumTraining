@@ -20,5 +20,7 @@ public class invalidLoginTest {
 
         String para = "Please use a valid user ID and password combination.";
         nasdaqLoginPage.loginSuccess(para);
+
+        seleniumBase.seleniumClose(driver);
     }
 }
