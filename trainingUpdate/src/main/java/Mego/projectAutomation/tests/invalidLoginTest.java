@@ -17,7 +17,7 @@ public class invalidLoginTest {
         nasdaqLoginPage nasdaqLoginPage = new nasdaqLoginPage(driver);
         nasdaqLoginPage.loginToNasdaq("abc123@gmail.com", "Aa12");
 
-
+//      The string I expect to receive.
         String para = "Please use a valid user ID and password combination.";
         nasdaqLoginPage.loginSuccess(para);
 

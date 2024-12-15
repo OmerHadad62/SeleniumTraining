@@ -19,7 +19,7 @@ public class seleniumBase {
         driver.get(url);
         return driver;
     }
-
+//  Function for closing driver.
     public static void seleniumClose(ChromeDriver driver){
         System.out.println("closing test...");
 

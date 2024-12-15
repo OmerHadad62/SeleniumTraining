@@ -10,11 +10,11 @@ public class searchWebsiteNasdaqTest {
         seleniumBase base = new seleniumBase();
         ChromeDriver driver = base.seleniumInit("https://www.nasdaq.com/");
 
-        // קריאה לדף חיפוש ב-Nasdaq
+//      Call to Nasdaq search page.
         nasdaqHomePage nasdaqHomePage = new nasdaqHomePage(driver);
         nasdaqHomePage.searchForStock("GOOG");
 
-        // קריאה לדף תוצאות חיפוש ב-Nasdaq
+//      Call to Nasdaq result page.
         resultSearchNasdaqPage resultSearchNasdaqPage = new resultSearchNasdaqPage(driver);
         resultSearchNasdaqPage.checkNameStock("GOOG");
 

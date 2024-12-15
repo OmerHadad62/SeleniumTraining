@@ -9,7 +9,7 @@ public class navBarNasdaqTest {
         seleniumBase base = new seleniumBase();
         ChromeDriver driver = base.seleniumInit("https://www.nasdaq.com");
 
-// Checking element Navbar.
+//      Checking element Navbar.
         nasdaqNavBarPage nasdaqNavBarPage = new nasdaqNavBarPage(driver);
         nasdaqNavBarPage.getTextFromNavBar();
 
